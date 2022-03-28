@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<!-- <link rel="icon" href="./img/favicon.ico">  -->
+	<!-- Генератор фавикон - https://realfavicongenerator.net/ -->
+	<title>Project</title>
+	<meta name="description" content="Description">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="block">
+			<div class="container">
+				<section class="section">
+					<div class="columns">
+						<div class="column">
+							<div class="content">
+								<h2 class="title">Задание 1:</h2>
+								<p>Создать карточку товара (яблока).</p>
+							</div>
+							<hr>
+							<div class="content lesson-content">
+								<div class="product" id="12345-product">
+									<img class="product__img" src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="яблоко" title="Красное, спелое яблоко">
+									<h3 class="product__title">Красное яблоко</h3>
+									<p class="product__text">Вкусное, спелое, сочное, красное, витаминное яблоко.</p>
+									<button class="product__pay">Купить</button>
+									<a class="product__more" href="https://ru.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE" target="_blank">Узнать подробнее</a>
+								</div>
+							</div>
+							<hr>
+							<div class="content">
+								<h3>Что должно быть</h3>
+							</div>
+							<table class="table is-bordered">
+								<thead>
+									<tr>
+										<td>Описание</td>
+										<td>Атрибуты (попробуй сначала сделать не подглядывая)</td>
+										<td>Содержимое</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Контейнер карточки</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>div</code> - блочный тег. В основном используется в качестве группировки элементов</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+												<li><code>id</code> - общий атрибут, может быть у любого тега. Уникальный идентификатор (id). Значение не должно повторяться больше нигде на странице.</li>
+											</ul>
+										</td>
+										<td>&lt;HTML code&gt;</td>
+									</tr>
+									<tr>
+										<td>Картинка товара</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>img</code> - тег картинки (не имеет закрывающего тега)</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+												<li><code>src</code> - обязательный атрибут img. В нем указывается путь до картинки. Он может быть абсолютный, например <i>https://yandex.ru</i>, или относительный, <i>./img/apple.png</i></li>
+												<li><code>alt</code> - обязательный атрибут img. В нем указывается краткое описание картинки, на случай если она не загрузится, а также для программ, которые читают текст с экрана людям с ограниченными возможностями.</li>
+												<li><code>title</code> - необязательный атрибут, доступный для любых тегов. Определяет название элемента. При наведении на элемент, появляется плашка с описанием</li>
+											</ul>
+										</td>
+										<td><a href="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" target="_blank">URL картинки</a></td>
+									</tr>
+									<tr>
+										<td>Название товара</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>h3</code> - тег заголовка (3 уровень важности)</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>Красное яблоко</td>
+									</tr>
+									<tr>
+										<td>Описание товара</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>p</code> - блочный тег текста</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>Вкусное, спелое, сочное, красное, витаминное яблоко.</td>
+									</tr>
+									<tr>
+										<td>Кнопка "Купить"</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>button</code> - тег кнопки</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>Купить</td>
+									</tr>
+									<tr>
+										<td>Ссылка "Узнать подробнее"</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>a</code> - тег ссылки</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+												<li><code>href</code> - url ссылки</li>
+												<li><code>target</code> - Определяет как будет открываться ссылка. Значение <b>_blank</b> открывает ссылку в новой вкладке</li>
+											</ul>
+										</td>
+										<td>Узнать подробнее</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="content">
+								<h3>Итоговый код:</h3>
+								<p>содержимое тегов, порядок атрибутов, название классов и текстовых атрибутов может отличаться. Главное чтобы были все атрибуты и теги и были написаны правильно</p>
+							</div>
+							<pre class="blur">
+								<code class="language-html">
+									<!-- <div class="product">
+										<img class="product__img" src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="яблоко" title="Красное, спелое яблоко">
+										<h3 class="product__title">Красное яблоко</h3>
+										<p class="product__text">Вкусное, спелое, сочное, красное, витаминное яблоко.</p>
+										<button class="product__pay">Купить</button>
+										<a href="https://ru.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE" class="product__more">Узнать подробнее</a>
+									</div> -->
+								</code>
+							</pre>
+						</div>
+					</div>
+				</section>
+				<section class="section">
+					<div class="columns">
+						<div class="column">
+							<div class="content">
+								<h2 class="title">Задание 2:</h2>
+								<p>Создать текст статьи блога</p>
+							</div>
+							<hr>
+							<div class="content lesson-content">
+								<div class="blog-content">
+									<h1>Как научиться печатать вслепую</h1>
+									<p>Это очень полезный навык в наше время. Представьте, сколько бы вы сэкономили времени и сил, если бы умели печатать со скоростью 250 знаков в минуту. </p>
+									<img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="Быстрая печать">
+									<h2>Почему важно уметь печатать вслепую?</h2>
+									<p>Lorem ipsum <u>dolor</u>, sit amet consectetur adipisicing elit. Quod, <strong>aspernatur</strong> maxime! Recusandae sint vitae dolorum facilis maiores porro, repellat delectus magnam <em>numquam</em> odio ullam doloribus, aliquam iste. Nisi, quasi cumque!</p>
+									<ul>
+										<li>Меньше нагрузки на глаза</li>
+										<li>Меньше устаете во время работы</li>
+										<li>Увеличите свою продуктивность</li>
+									</ul>
+									<p>Lorem ipsum dolor, sit amet <b>consectetur</b> adipisicing elit. <a href="#">Quod</a>, aspernatur maxime! Recusandae sint vitae dolorum facilis <i>maiores</i> porro, repellat delectus magnam numquam odio ullam doloribus, <u>aliquam</u> iste. Nisi, quasi cumque!</p>
+									<p>Lorem ipsum dolor sit amet <q>consectetur adipisicing elit</q>. Maiores eaque sint voluptates repellat, error sunt atque ipsa repudiandae totam rerum quae soluta nihil, <a href="#">Iste Aperiam</a>? Itaque placeat incidunt dignissimos officiis.</p>
+									<ol>
+										<li>Меньше нагрузки на глаза</li>
+										<li>Меньше устаете во время работы</li>
+										<li>Увеличите свою продуктивность</li>
+									</ol>
+									<blockquote><b>Цитата великого человека</b>: consectetur adipisicing elit. Deleniti illo quas facilis laborum cumque quisquam molestias voluptatibus facere? Odit, doloribus perspiciatis vero commodi libero et distinctio itaque omnis laborum excepturi!</blockquote>
+								</div>
+							</div>
+							<hr>
+							<div class="content">
+								<h3>Что должно быть</h3>
+							</div>
+							<table class="table is-bordered">
+								<thead>
+									<tr>
+										<td>Описание</td>
+										<td>Атрибуты (попробуй сначала сделать не подглядывая)</td>
+										<td>Содержимое</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Контейнер статьи</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>div</code> - блочный тег. В основном используется в качестве группировки элементов</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>&lt;HTML code&gt;</td>
+									</tr>
+									<tr>
+										<td>Название статьи</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>h1</code> - заголовок первого уровня. Главный заголовок страницы. Он может быть только один на странице.</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>Почему важно уметь печатать вслепую?</td>
+									</tr>
+									<tr>
+										<td>Картинка товара</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>img</code> - тег картинки (не имеет закрывающего тега)</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+												<li><code>src</code> - обязательный атрибут img. В нем указывается путь до картинки. Он может быть абсолютный, например <i>https://yandex.ru</i>, или относительный, <i>./img/apple.png</i></li>
+												<li><code>alt</code> - обязательный атрибут img. В нем указывается краткое описание картинки, на случай если она не загрузится, а также для программ, которые читают текст с экрана людям с ограниченными возможностями.</li>
+												<li><code>title</code> - необязательный атрибут, доступный для любых тегов. Определяет название элемента. При наведении на элемент, появляется плашка с описанием</li>
+											</ul>
+										</td>
+										<td><a href="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" target="_blank">URL картинки</a></td>
+									</tr>
+									<tr>
+										<td>Подзаголовки статьи</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>h2...h6</code> - заголовки ниже первого уровня. Используются как определение основной мысли текста уровня, на котором они находятся</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>lorem*</td>
+									</tr>
+									<tr>
+										<td>Текст статьи</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>p</code> - блочный тег текста</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>lorem*</td>
+									</tr>
+									<tr>
+										<td>Списки</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>ul</code> - Маркированный список</li>
+												<li><code>ol</code> - Нумерованный список</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>Теги <code>li</code></td>
+									</tr>
+									<tr>
+										<td>Элемент списка</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>li</code> - Элемент списка</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>lorem*</td>
+									</tr>
+									<tr>
+										<td>Цитаты</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>blockquote</code> - Большая цитата. Этот тег является блочным, поэтому он не может быть расположен внутри другого текстового тега. Для этого используется тег <code>q</code></li>
+												<li><code>q</code> - Маленькая цитата.</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>lorem*</td>
+									</tr>
+									<tr>
+										<td>Жирный текст</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>strong</code> - Текст выделяется жирным, а также становится более важным для поисковых роботов (семантический тег)</li>
+												<li><code>b</code> - Просто жирный текст</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>lorem*</td>
+									</tr>
+									<tr>
+										<td>Курсивный текст</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>em</code> - Текст выделяется курсивом, а также становится более важным для поисковых роботов (семантический тег)</li>
+												<li><code>i</code> - Просто курсивный текст</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>lorem*</td>
+									</tr>
+									<tr>
+										<td>Текст подчеркивается</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>u</code> - Текст подчеркивается линией</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+											</ul>
+										</td>
+										<td>lorem*</td>
+									</tr>
+									<tr>
+										<td>Ссылка</td>
+										<td class="blur">
+											<h3><b>Тег:</b></h3>
+											<ul>
+												<li><code>a</code> - Ссылка. Может быть как отдельным элементом, так и находится в тексте, т.к. является строчным тегом</li>
+											</ul>
+											<h3><b>Атрибуты:</b></h3>
+											<ul>
+												<li><code>class</code> - общий атрибут, может быть у любого тега. С помощью класса через CSS задается оформление элемента</li>
+												<li><code>href</code> - url ссылки</li>
+												<li><code>target</code> - Определяет как будет открываться ссылка. Значение <b>_blank</b> открывает ссылку в новой вкладке</li>
+											</ul>
+										</td>
+										<td>lorem*</td>
+									</tr>
+									
+								</tbody>
+							</table>
+							<div class="content">
+								<h3>Итоговый код:</h3>
+								<p>содержимое тегов, порядок атрибутов, название классов и текстовых атрибутов может отличаться. Главное чтобы были все атрибуты и теги и были написаны правильно</p>
+							</div>
+							<pre class="blur"><code class="language-html"></code></pre>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+</body>
+
+</html>
