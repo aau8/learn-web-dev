@@ -35,7 +35,11 @@ export default {
       template: `./src/${page}`, // Где находится файл
       filename: `./${page}`, // Название файла
       inject: 'body', // Все скрипты помещаются внизу body, кроме страницы index.html
-      minify: false,
+      minify: {
+        collapseWhitespace:false
+      },
+      // minimize: false,
+      // pretty: true,
     })),
     // Очищаем папку dist
     new CleanWebpackPlugin(),
