@@ -34,12 +34,11 @@ export default {
     ...PAGES.map((page) => new HtmlWebpackPlugin({
       template: `./src/${page}`, // Где находится файл
       filename: `./${page}`, // Название файла
-      inject: 'body', // Все скрипты помещаются внизу body, кроме страницы index.html
+      // inject: 'body', // Все скрипты помещаются внизу body, кроме страницы index.html
       minify: {
-        collapseWhitespace:false
+        collapseWhitespace: false, 
+        removeComments: false, 
       },
-      // minimize: false,
-      // pretty: true,
     })),
     // Очищаем папку dist
     new CleanWebpackPlugin(),
@@ -50,10 +49,10 @@ export default {
   module: {
       rules: [
         // HTML
-        {
-          test: /\.html$/i,
-          use: 'html-loader'
-        },
+        // {
+        //   test: /\.html$/i,
+        //   use: 'html-loader'
+        // },
         // CSS
         {
           test: /\.(s[ac]ss|css)$/i,
